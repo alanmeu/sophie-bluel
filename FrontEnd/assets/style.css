@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin: auto;
+	font-family: 'Work Sans';
+	font-size: 14px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+
+section {
+	margin: 50px 0
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1>span {
+	font-family: 'Work Sans';
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	;
+}
+
+h2 {
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Work Sans';
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}
+
+header a:hover {
+	color: #B1663C;
+}
+
+#introduction {
+	display: flex;
+	align-items: center;
+}
+
+#introduction figure {
+	flex: 1
+}
+
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+
+}
+
+.filter {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.filter button {
+	height: 37px;
+	border-radius: 60px;
+	border: 1px solid rgba(29, 97, 84, 1);
+	color: rgba(29, 97, 84, 1);
+	font-family: 'Syne';
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.filter button:hover {
+	background-color: rgba(29, 97, 84, 1);
+	color: white;
+	transition: 0.3s;
+
+}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+
+#contact {
+	width: 50%;
+	margin: auto;
+}
+
+#contact>* {
+	text-align: center;
+
+}
+
+#contact h2 {
+	margin-bottom: 20px;
+}
+
+#contact form {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label {
+	margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin: 2em auto;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+.log {
+	width: 50%;
+	margin: auto;
+}
+
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#loginForm {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#loginForm input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#loginForm label {
+	margin: 2em 0 1em 0;
+}
+
+.log a {
+	color: rgba(61, 61, 61, 1);
+	text-align: center;
+}
+
+.modal {
+	position: fixed;
+	display: none;
+	inset: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+#modalBackground {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-wrapper {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	width: 600px;
+	height: 680px;
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1;
+	background-color:rgba(255, 255, 255, 1)
+}
+
+
+.authButton {
+	display: none;
+}
+
+.js-modal {
+	color: black;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+#step0 h1 {
+	display: flex;
+	text-align: center;
+	padding: 20px;
+	color: black;
+	font-family: 'Work Sans';
+}
+
+
+
+#modalGallery #gallery {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+padding: 40px;
+border-bottom: 1px solid rgba(179, 179, 179, 1);
+
+
+
+
+}
+
+#modalGallery #gallery img {
+	width: 78px;
+	height: 104px;
+	
+}
+
+.closeModal {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.modal-wrapper #step0 .ajout{
+	display: flex;
+align-items: center;
+margin: auto;
+;margin-top: 20px;
+}
+.corbeil {
+	position:fixed;
+
+  }
+
+  #step1 {
+	display: none;
+}
+
+#step1>* {
+	text-align: center;
+
+}
+
+#step1 h2 {
+	margin-bottom: 20px;
+	color: black;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+#step1 #addWorkForm {
+	text-align: left;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.imageForm {
+	background-color: rgba(232, 241, 246, 1);
+    padding: 20px;
+    border-radius: 10px;
+	width: 420px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imageForm label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.imageForm i{
+	font-size:68px;
+	color: rgba(185,197,204,1);
+}
+ .file-input {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+ .file-input input[type="file"] {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+#addWorkForm input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#addWorkForm select{
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
