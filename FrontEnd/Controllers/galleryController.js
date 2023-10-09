@@ -76,6 +76,7 @@ class galleryController {
     
         // Mettre à jour le tableau this.works en supprimant l'élément 
        await this.fetch()
+       this.displayAllWorks()
 
  }
 }
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             await this.fetch()
+            this.displayAllWorks()
     });
 });
 //affichage de l'image lors du Post
