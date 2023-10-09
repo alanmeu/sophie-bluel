@@ -75,7 +75,7 @@ class galleryController {
         });
     
         // Mettre à jour le tableau this.works en supprimant l'élément 
-        this.works = this.works.filter(work => work.id !== workId);
+       await this.fetch()
 
  }
 }
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: formData,
             });
 
-          
+            await this.fetch()
     });
 });
 //affichage de l'image lors du Post
