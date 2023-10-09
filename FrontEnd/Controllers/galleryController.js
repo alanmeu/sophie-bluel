@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //je recupere le form et le submit
     const form = document.getElementById('addWorkForm'); 
     const submitButton = document.getElementById('submit'); 
+    const _=this;
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault(); 
@@ -108,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: formData,
             });
 
-            await this.fetch()
-            this.displayAllWorks()
+            await _.fetch()
+            _.displayAllWorks()
     });
 });
 //affichage de l'image lors du Post
