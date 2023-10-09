@@ -110,4 +110,24 @@ document.addEventListener('DOMContentLoaded', () => {
           
     });
 });
+//affichage de l'image lors du Post
+const imageInput = document.getElementById('image');
+const selectedImage = document.getElementById('selectedImage');
+const span= document.getElementById("addpict")
+
+
+imageInput.addEventListener('change', (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+        span.style.display = 'none'
+        // je créé un objet url pour l'image sélectionnée
+        const imageUrl = URL.createObjectURL(selectedFile);
+
+        //j'integre l'element avec son url
+        selectedImage.src = imageUrl;
+        selectedImage.style.display = 'block';
+        
+    }
+});
+
 export default galleryController;

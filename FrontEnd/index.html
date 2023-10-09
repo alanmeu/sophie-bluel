@@ -71,23 +71,29 @@
 							<h3>Ajout photo</h3>
 							<form id="addWorkForm" enctype="multipart/form-data">
 								<div class="imageForm">
-									<label for="image"><i class="fa-regular fa-image"></i></label>
+									<label for="image" class="upload-button">
+										<i class="fa-regular fa-image">
+										</i>
+										<span class="addpict" id="addpict">+ Ajouter photo</span>
+										<img id="selectedImage" src="" alt="Image sélectionnée" >
+									</label>
 									<input type="file" id="image" accept="image/*" required>
 									<span>jpg. png : 4mo max</span>
 								</div>
 								<div>
-									<label for="title">Titre:</label>
+									<label for="title" >Titre</label>
 									<input type="text" id="title" required>
 								</div>
-								<div>
-									<label for="category">Catégorie:</label>
+								<div class="border-bottom">
+									<label for="category" >Catégorie</label>
 									<select id="category" required>
 										<option value="2">Appartement</option>
 										<option value="3">Hôtel</option>
 										<option value="1">Objet</option>
 									</select>
 								</div>
-								<button type="submit" id="submit" >Ajouter</button>
+								
+								<button type="submit" id="submit" >Valider</button>
 							</form>
 								<div id="response"></div>
 						</div>
