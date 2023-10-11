@@ -11,8 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
 		rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="FrontEnd/assets/style.css">
-	<script src="FrontEnd/index.js" type="module" defer></script>
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="index.js" type="module" defer></script>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 		<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 		<nav>
 			<ul>
-				<li>projets</li>
-				<li>contact</li>
+				<a href="#project">projets</a>
+				<a href="#contacte">contact</a>
 				<a class="authButton" id="loginButton" href="login.html">login</a>
 				<a class="authButton" id="logoutButton">logout</a>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
@@ -88,7 +88,7 @@
 									<label for="category" >Catégorie</label>
 									<select id="category" required>
 										<option value="2">Appartement</option>
-										<option value="3">Hôtel</option>
+										<option value="3">Hôtel & Restaurant</option>
 										<option value="1">Objet</option>
 									</select>
 								</div>
@@ -97,7 +97,7 @@
 							</form>
 								<div id="response"></div>
 						</div>
-
+                            <div id="project"></div>
 
 						<i class="fa-solid fa-x closeModal"></i>
 						
@@ -111,7 +111,7 @@
 		</section>
 		<section id="contact">
 			<h2>Contact</h2>
-			<p>Vous avez un projet ? Discutons-en !</p>
+			<p id="contacte">Vous avez un projet ? Discutons-en !</p>
 			<form action="#" method="post">
 				<label for="name">Nom</label>
 				<input type="text" name="name" id="name">

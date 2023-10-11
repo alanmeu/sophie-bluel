@@ -45,9 +45,11 @@ class Modal {
     }
 
     closeModal(){
-        
         this.isOpen = false;
+        step0.style.display = 'block';
+        step1.style.display = 'none';
         this.modal.style.display = "none"
+        this.onClose();
     }
     
 }
